@@ -20,7 +20,7 @@ bot.start(ctx => {
 const loveCalculate = new WizardScene(
   "love_calculate",
   ctx => {
-    ctx.reply("Please, type in your name");
+    ctx.reply("Please, enter your name");
     return ctx.wizard.next();
   },
   ctx => {
@@ -38,23 +38,21 @@ const loveCalculate = new WizardScene(
       .then(res => {
         const { fname, sname, percentage, result } = res.data;
         ctx.reply(
-          `${fname} + ${sname} = ${percentage}% \n ${result}`,
+          `${fname} + ${sname} = ${percentage}% \n ${percentage > 50 ? '☺️' : '😢'} ${result}`,
           Markup.inlineKeyboard([
             Markup.callbackButton(
-              "💱 calculate Another Relationship",
+              "♥️ calculate Another Relationship",
               "LOVE_CALCULATE"
             )
           ]).extra()
         );
       })
-      .catch(err => {
-        ctx.reply(
-          err.message,
-          Markup.inlineKeyboard([
-            Markup.callbackButton("calculate again", "LOVE_CALCULATE")
-          ]).extra()
-        );
-      });
+      .catch(err => ctx.reply(
+        err.message,
+        Markup.inlineKeyboard([
+          Markup.callbackButton("calculate again", "LOVE_CALCULATE")
+        ]).extra()
+      ));
     return ctx.scene.leave();
   }
 );
