@@ -8,14 +8,15 @@ Love Calculator Telegram Bot with Node.js
 
 Since Telegram Bot has appeared, I always interested in how they work. So I decided to build simple Telegram Bot with Node.js and Telegraf. Telegraf is a modern bot framework for Node.js.
 
-Link to article https://medium.com/@gapur.kassym/build-own-telegram-bot-with-node-js-516b8f233585
-
-
 ## Create own Bot with BotFather
 
 First, We should create own bot with BotFather. BotFather is the one bot to rule them all. We will use it to create new bot accounts and manage your existing bots.
 
 If you open a chat with a BotFather, click on the “Start” button:
+
+<p align="center">
+  <img width="680"src="https://github.com/Gapur/cupido-bot/blob/master/images/start.png">
+</p>
 
 We should create a new bot by clicking /newbot command. Next, you should enter any name for the bot. I named Cupido 
 
@@ -50,7 +51,15 @@ bot.hears('hi', (ctx) => ctx.reply('Hey there')) // listen and handle when user 
 bot.launch() // start
 ```
 
+<p align="center">
+  <img width="680"src="https://github.com/Gapur/cupido-bot/blob/master/images/two-step.png">
+</p>
+
 We can change bot’s icon by /mybots command.
+
+<p align="center">
+  <img width="680"src="https://github.com/Gapur/cupido-bot/blob/master/images/image.png">
+</p>
 
 Let's create loveCalculator.js to work with api:
 ```js
@@ -146,9 +155,13 @@ bot.launch();
 
 ## Our Telegram Bot
 
+<p align="center">
+  <img width="680"src="https://github.com/Gapur/cupido-bot/blob/master/images/bot.png">
+</p>
+
 ## Article on Medium
 
-[How to Use Google Place Autocomplete With React Without a Third-Party Library](https://medium.com/better-programming/the-best-practice-with-google-place-autocomplete-api-on-react-939211e8b4ce)
+[Build own Telegram Bot with Node.js](https://medium.com/@gapur.kassym/build-own-telegram-bot-with-node-js-516b8f233585)
 
 ## How to contribute?
 
