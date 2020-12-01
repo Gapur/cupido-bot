@@ -1,13 +1,25 @@
 {
   "name": "cupido-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Love Calculator Telegram Bot with Node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gapur Kassym",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gapur/cupido-bot.git"
+  },
+  "homepage": "https://github.com/Gapur/cupido-bot/blob/master/README.md",
+  "keywords": [
+    "nodejs",
+    "telegraf",
+    "bot",
+    "telegram",
+    "javascript"
+  ],
   "dependencies": {
     "axios": "^0.19.0",
     "telegraf": "^3.33.3"
