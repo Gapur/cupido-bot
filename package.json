@@ -21,7 +21,7 @@
     "javascript"
   ],
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.2",
     "telegraf": "^3.33.3"
   }
 }
